@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TreadBank - Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<!--BEGIN QUALTRICS SITE INTERCEPT-->
+<script type='text/javascript'>
+(function(){var g=function(e,h,f,g){
+this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g+ "&t=" + (new Date()).getTime();document.body&&document.body.appendChild(a)}};
+this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
+try{(new g(100,"r","QSI_S_ZN_3jW5W14FlNJCdgN","https://zn3jw5w14flnjcdgn-tread.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_3jW5W14FlNJCdgN&Q_LOC="+encodeURIComponent(window.location.href))).start()}catch(i){}})();
+</script><div id='ZN_3jW5W14FlNJCdgN'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+<!--END SITE INTERCEPT-->
+<!-- STYLES FOR THIS PAGE -->
+        <style type="text/css">
+        @font-face {
+            font-family: 'QualtricsGrotesque-Regular';
+            src: url('http://treadbank.com/login/fonts/QualtricsGrotesque-Regular.otf');
+            src: url('http://treadbank.com/login/fonts/QualtricsGrotesque-Regular.eot?') format('embedded-opentype'),
+
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Regular.woff') format('woff'),
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Regular.ttf') format('truetype'),
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Regular.svg') format('svg');
+            font-weight: 300;
+            font-style: normal;  
+        }
+        @font-face {
+            font-family: 'QualtricsGrotesque-Bold';
+            src: url('http://treadbank.com/login/fonts/QualtricsGrotesque-Bold.otf');
+            src: url('http://treadbank.com/login/fonts/QualtricsGrotesque-Bold.eot?') format('embedded-opentype'),
+
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Bold.woff') format('woff'),
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Bold.ttf') format('truetype'),
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Bold.svg') format('svg');
+            font-style: bold;  
+        }
+        @font-face {
+            font-family: 'QualtricsGrotesque-Thin';
+            src: url('http://treadbank.com/login/fonts/QualtricsGrotesque-Thin.otf');
+            src: url('http://treadbank.com/login/fonts/QualtricsGrotesque-Thin.eot?') format('embedded-opentype'),
+
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Thin.woff') format('woff'),
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Thin.ttf') format('truetype'),
+                 url('http://treadbank.com/login/fonts/QualtricsGrotesque-Thin.svg') format('svg');
+            font-style: bold;  
+        }
+            .clear { clear: both; }
+            .show{
+            display:block;
+            }
+            .hide{
+                display:none;
+            }
+            @media (min-width: 1200px) {
+                .container {
+                    width: 970px;
+                }
+            }
+            /* COLORS */
+            .white {
+                color:#ffffff;
+            }
+            .gray {
+                color: #929497;
+            }
+            .blue {
+                color: #32a4e0;
+            }
+            .gray-bg {
+                background-color: #929497;
+            }
+            .black {
+                color: #000000;
+            }
+            h1 {
+                font-size: 72px;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 40px;
+            }
+            h3 {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: .2em;
+            }
+            h4 {
+                font-weight: 300;
+                font-size: 40px;
+                font-size: 30px;
+            }
+            hr {
+                border-top: 1px solid #000;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+            body {
+                padding-top: 50px;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 16px;
+            }
+            .navbar-inverse{
+                background-image: none;
+                background-color: #091a24;
+            }
+            .navbar-fixed-top .nav {
+                padding: 0px 0;
+            }
+            .navbar-fixed-top .navbar-brand {
+                padding: 0 15px;
+            }
+            @media(min-width:768px) {
+                body {
+                }
+                .navbar-fixed-top .navbar-brand {
+                    padding: 15px 0;
+                }
+            }
+            .navbar-nav {
+                float: right;
+                height: 45px;
+            }
+            @media(max-width: 768px) {
+            .navbar-nav {
+                float: left;
+                height: inherit;
+                }   
+            }
+            .navbar-nav li a {
+                color: #859caa !important;
+                font-size: 14px;
+            }
+            .navbar-brand {
+                float: left;
+                height: 50px;
+                padding: 0px; 
+                margin-left: -15px;
+                line-height: 20px; 
+            }
+            .navbar-nav2 {
+                float: right;
+                height: 45px;
+                display: flex;
+            }
+
+            #bs-example-navbar-collapse-2 {
+                margin-top: 75px;
+                margin-bottom: 50px;
+                border-bottom: 1px solid white;
+            }
+            @media (max-width: 500px) {
+                    #bs-example-navbar-collapse-2 {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        border-bottom: none;
+                        line-height: 2px;
+                }
+            }
+            @media (max-width: 500px) {
+                    .navbar-nav2 {
+                        float: left;
+                        display: inline-table;
+                        height: inherit;
+                        clear: both;
+                }
+            }
+            .navbar-nav2 li a{
+                padding: 25px 15px;
+                color: white;
+                font-weight: 600;
+                letter-spacing: 3px;
+                font-size: 14px;
+            }
+            .navbar-nav2 li a:hover, .navbar-nav2 li a:active, .navbar-nav2 li a:focus{
+                background-color: transparent;
+                color: #859caa;
+            }
+            .top {
+                display: inherit;
+                background-size: cover;
+                background-image: url(../images/background.png);
+            }
+            .top-secondary {
+                display: inherit;
+                background-color: #6a8494;
+            }
+            .top-accounts {
+                display: inherit;
+                background-size: cover;
+                background-image: url(../images/accounts.png);
+            }
+            .top-loans {
+                display: inherit;
+                background-size: cover;
+                background-image: url(../images/loans.png);
+            }
+            .top-services {
+                display: inherit;
+                background-size: cover;
+                background-image: url(../images/services.png);
+            }
+            .btn-primary {
+                background-color: #32a4e0;
+                background-image: none;
+                 border: none;
+            }
+            .numbers {
+                color: #32a4e0;
+                font-size: 28px;
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: 300;
+            }
+
+            .footer {
+                background: #e0e0e0;
+                height: auto;
+                position: relative;
+                margin-top: 30px;
+                width: 100%;
+                border-top: 1px solid #DDDDDD;
+            }
+            .footer p {
+                margin: 0;
+            }
+            .footer img {
+                max-width: 100%;
+            }
+            .footer h3 {
+                color: #838383;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 27px;
+                padding: 40px 0 0px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            .footer ul {
+                font-size: 13px;
+                list-style-type: none;
+                margin-left: 0;
+                padding-left: 0;
+                margin-top: 15px;
+                color: #7F8C8D;
+            }
+            .footer ul li a {
+                padding: 0 0 5px 0;
+                display: block;
+            }
+            .footer a {
+                color: #9c9c9c;
+            }
+            .footer-bottom {
+                background: #e0e0e0;
+                padding-top: 50px;
+                padding-bottom: 10px;
+            }
+            .footer-bottom p a{
+                font-size: 12px;
+            }
+            .footer-bottom p.pull-left {
+                padding-top: 6px;
+            }
+            .columns {
+                list-style: none;
+                line-height: 75px;
+                padding-left: 0px;
+            }
+            .login-column-2 {
+                margin-left: -55px;
+            }
+            @media(max-width: 600px) {
+                .login-column-2 {
+                    margin-left: 0px;
+                }
+            }
+        </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="position: absolute;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../rates/index.html">Rates</a>
+                    </li>
+                    <li>
+                        <a href="index.html#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="index.html#">Branch Locator</a>
+                    </li>
+                    <li>
+                        <a href="index.html#">Search<span style="padding-left: 10px; color: white;" class="glyphicon glyphicon-search"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+<div class="top-secondary">
+    <div class="container">
+        <!-- Heading Row -->
+        <div class="row">
+
+            <nav class="navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <a class="navbar-brand">
+                        <img src="../images/logo.png" alt="">
+                    </a>
+                <ul class="nav navbar-nav2">
+                    <li>
+                        <a href="../accounts/index.html">ACCOUNTS</a>
+                    </li>
+                    <li>
+                        <a href="../loans/index.html">LOANS</a>
+                    </li>
+                    <li>
+                        <a href="http://treadbank.com/services">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="../form/index.html">BUSINESS</a>
+                    </li>
+                    <li>
+                        <a href="../rates/index.html">INVESTMENTS</a>
+                    </li>
+                </ul>
+            </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" style="padding-bottom: 50px; padding-top: 15px;">
+                <h2 style="display: inline-block;">Interest Checking - 2080</h2>
+                <ul class="nav navbar-nav2" style="float: right; margin-left: -30px;height: 0px;">
+                    <li><a href="index.html#" style="color: #000;">My Account</a></li>
+                    <li><a href="index.html#" style="color: #32a4e0;">Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 col-xs-12">
+                <h3>SUMMARY</h3>
+                <hr class="gray" style="border-top: 1px solid #e0e0e0;">
+                <span><p style="display: inline-block;">Available balance (as of today)</p></span>
+                <span><p style="font-family: 'QualtricsGrotesque-Bold';display: inline-block; float: right;">$4,864.39</p></span>
+                <hr class="gray" style="border-top: 1px solid #e0e0e0;">
+                <a href="index.html#" style="color: #32a4e0;">Account balance history ></a>
+            </div>
+            <div class="col-md-5 col-md-offset-2 col-xs-12">
+                <h3>FEATURES</h3>
+                <hr class="gray" style="border-top: 1px solid #e0e0e0;">
+                <span><p style="display: inline-block;">Keep the Change</p></span><br>
+                <span><p style="display: inline-block;">Overdraft protection</p></span><br>
+                <a href="index.html#" style="color: #32a4e0;">More Features ></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+         <ul class="nav nav-tabs" style="margin-top: 50px;">
+          <li role="presentation" class="active" style="margin-bottom: 0px;"><a href="index.html#" style="color: black;">Activity</a></li>
+          <li role="presentation"><a href="index.html#" style="color: black;">Statements</a></li>
+          <li role="presentation"><a href="index.html#" style="color: black;">Information & Services</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="padding-top: 50px;">
+        <div class="col-md-7 col-xs-12">
+           <div style="float: left; width: 33%;">
+            <p class="gray">Date</p>
+            <ul class="columns">
+            <li>> 09/10/2017</li>
+            <li>> 09/10/2017</li>
+            <li>> 09/08/2017</li>
+            <li>> 09/08/2017</li>
+            <li>> 09/02/2017</li>
+            <li>> 08/29/2017</li>
+            <li class="gray">View More</li>
+            </ul>
+            </div>
+            <div class="login-column-2" style="float: left; width: 33%;">
+            <p class="gray">Description</p>
+            <ul class="columns">
+            <li class="blue">Diana's Craft Store</li>
+            <li class="blue">Grocery Store</li>
+            <li class="blue">Shrimp Shack</li>
+            <li class="blue">Gas Station</li>
+            <li class="blue">Pet Groomer</li>
+            <li class="blue">Hair Salon</li>
+            </ul>
+            </div>
+            <div style="float: right; width: 33%;">
+            <p class="gray">$ Amount</p>
+            <ul class="columns">
+            <li>-25.00</li>
+            <li>-57.00</li>
+            <li>-11.00</li>
+            <li>-24.00</li>
+            <li>-44.00</li>
+            <li>-90.00</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-xs-12" style="padding-right: 0px;">
+            <img class="img-responsive" src="../images/login.png">
+        </div>
+
+        </div>
+    </div>
+
+<footer style="padding-top: 50px;">
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                    <h3>TOOLS</h3>
+                    <ul>
+                        <li> <a href="index.html#">Learning Center</a> </li>
+                        <li> <a href="index.html#">Financial Calculations</a> </li>
+                        <li> <a href="index.html#">Help Center</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                    <h3>ABOUT US</h3>
+                    <ul>
+                        <li> <a href="index.html#">Community</a> </li>
+                        <li> <a href="index.html#">Newsroom</a> </li>
+                        <li> <a href="index.html#">Careers</a> </li>
+                        <li> <a href="index.html#">Online Security</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li> <a href="index.html#">Online Branch</a> </li>
+                        <li> <a href="index.html#">Mobile Banking</a> </li>
+                        <li> <a href="index.html#">Bill Pay</a> </li>
+                        <li> <a href="index.html#">Mobile Deposit</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                    <h3>ACCOUNTS</h3>
+                    <ul>
+                        <li> <a href="index.html#">Checking Accounts</a> </li>
+                        <li> <a href="index.html#">Savings Accounts</a> </li>
+                        <li> <a href="index.html#">Business</a> </li>
+                        <li> <a href="index.html#">Credit Cards</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                    <h3>LOANS</h3>
+                    <ul>
+                        <li> <a href="index.html#">Home Loans</a> </li>
+                        <li> <a href="index.html#">Home Equity Loan</a> </li>
+                        <li> <a href="index.html#">Auto Loans</a> </li>
+                        <li> <a href="index.html#">RV Loans</a> </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p style="text-align: center;"><a class="gray" href="index.html#">Site Map</a><span class="gray" style="padding: 0px 15px;">|</span><a class="gray" href="index.html#">Privacy Policy</a><span class="gray" style="padding: 0px 15px;">|</span><a class="gray" href="index.html#">Patriot Act</a><span class="gray" style="padding: 0px 15px;">|</span><a class="gray" href="index.html#">Important Disclosures</a></p>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+    <!-- /.container -->
+
+
+</body>
+<script type="text/javascript">
+
+ 
+    
+ 
+
+    $('.ebook').click(function (event) {
+        $('#myModal').removeClass('hidden');
+    });
+
+    
+    $('.active-asset').click(function(event){
+            var issue_number=$(this).data('number');
+            $('html, body').animate({
+                scrollTop: $("#scroll"+issue_number).offset().top -100// scrolls down to position on selection
+            }, 1000);
+        });
+
+    $('.inactive').click(function (event) {
+        var issue_number=$(this).data('number');
+        $('.formbox-body').show();
+        $('.footer').hide();
+        $('.footer-collapse').show();
+        $('html, body').animate({
+            scrollTop: $("#scroll"+issue_number).offset().top -100// scrolls down to position on selection
+            }, 1000);
+    });
+
+    $('.download-asset').click(function(){
+            var download_asset=$(this).data('download');
+            $('#qualtrics_download').val(download_asset);
+        });
+
+
+$('.glyphicon-chevron-down').click(function (event) {
+    event.preventDefault();
+    $('.formbox-body').slideToggle('slow');
+    $('.footer').hide();
+    $('.footer-collapse').show();
+});
+
+$('.glyphicon-chevron-up').click(function (event) {
+    event.preventDefault();
+    $('.formbox-body').slideToggle('fast');
+    $('.footer-collapse').hide();
+    $('.footer').show();
+});
+
+    $('#millennials-submit').click(function(event){
+        event.preventDefault();
+        var mkto_name= $('#qualtrics_name_form').val(),
+            mkto_last= $('#qualtrics_last_form').val(),
+            mkto_company=$('#qualtrics_company_form').val(),
+            mkto_email=$('#qualtrics_email_form').val(),
+            mkto_download=$('#qualtrics_qualtrics_download').val();
+        __kylo__.logEvent('Q_FORM_SUBMIT', {
+            email: mkto_email,
+            firstName: mkto_name,
+            lastName: mkto_last,
+            company: mkto_company,
+            download: mkto_download
+        });
+        mkto_submit(mkto_name, mkto_last, mkto_company, mkto_email, mkto_download);     
+    });
+    function mkto_submit(mkto_name, mkto_last, mkto_company, mkto_email, mkto_download){
+       //console.log('First:'+mkto_name+'\n'+"Last: "+mkto_last_name+'\n'+"Email: "+mkto_email+'\n'+"Type: "+mkto_type);
+        if(typeof ga !== 'undefined')
+            ga('send', 'event',  'Registration', 'Form', 'Millennials');
+            
+       
+        //contact_datastring= $("#"+mkto_parent).serialize();
+    
+         //console.log(contact_datastring);
+        $('#mktoForm_3692 #FirstName').val(mkto_name);
+        $('#mktoForm_3692 #LastName').val(mkto_last);
+        $('#mktoForm_3692 #Company').val(mkto_company);
+        $('#mktoForm_3692 #Email').val(mkto_email);
+        
+        setCookie('qmillennials','registered', 30);
+
+        setTimeout( function(){
+            
+             $('#mktoForm_3692 .mktoButtonRow .mktoButton').click();
+
+        } , 500 );
+
+    }
+
+//COOKIE
+
+function setCookie(cname, cvalue, exdays) {
+    var expires;
+    var days = 30;
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+    }
+    else {
+        expires = "";
+    }
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+</script>
+</html>
