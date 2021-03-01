@@ -73,14 +73,6 @@ try{(new g(100,"r","QSI_S_ZN_3jW5W14FlNJCdgN","https://zn3jw5w14flnjcdgn-tread.s
             .hide{
                 display:none;
             }
-            .overlay {
-                background-color: rgba(192,192,192,0.1);
-                height:100%;
-                width:100%;
-                position:absolute;
-                top:0;
-                left:0;
-            }
             @media (min-width: 1200px) {
                 .container {
                     width: 970px;
@@ -211,6 +203,8 @@ try{(new g(100,"r","QSI_S_ZN_3jW5W14FlNJCdgN","https://zn3jw5w14flnjcdgn-tread.s
                 display: inherit;
                 background-size: cover;
                 background-image: url(images/background.png);
+                background-blend-mode: screen;
+                background-color: gray;
             }
             .top-secondary {
                 display: inherit;
@@ -348,7 +342,6 @@ try{(new g(100,"r","QSI_S_ZN_3jW5W14FlNJCdgN","https://zn3jw5w14flnjcdgn-tread.s
     </nav>
     <!-- Page Content -->
 <div class="top">
-    <div class="overlay" />
     <div class="container">
         <!-- Heading Row -->
         <div class="row">
